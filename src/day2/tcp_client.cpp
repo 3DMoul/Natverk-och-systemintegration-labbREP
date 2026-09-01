@@ -27,7 +27,7 @@ int main() {
     }
 
     const std::string payload =
-        R"({"sensorId":"temp-demo-01","value":21.7,"unit":"C"})";
+        R"({"sensorId":"temp-demo-02","value":25,"unit":"C"})";
     send(client, payload.data(), static_cast<int>(payload.size()), 0);
 
     char buffer[4096]{};
