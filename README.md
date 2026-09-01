@@ -1,2 +1,2 @@
 # git-recap
-lesson just to relearn git
+detta reposetory är för alla labbar
