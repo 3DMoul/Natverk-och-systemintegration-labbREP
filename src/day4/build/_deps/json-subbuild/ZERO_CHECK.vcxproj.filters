@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\svant\OneDrive\Desktop\dagens labb rep\Natverk-och-systemintegration-labbREP\src\day4\build\_deps\json-subbuild\CMakeFiles\82a098e38c45d2cace3f635c9ec5397b\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2741DD86-B655-3A07-95D9-869D28ABB917}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

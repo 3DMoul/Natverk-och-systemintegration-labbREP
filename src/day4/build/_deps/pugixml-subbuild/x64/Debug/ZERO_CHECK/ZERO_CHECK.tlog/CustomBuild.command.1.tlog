@@ -1,0 +1,10 @@
+^C:\USERS\SVANT\ONEDRIVE\DESKTOP\DAGENS LABB REP\NATVERK-OCH-SYSTEMINTEGRATION-LABBREP\SRC\DAY4\BUILD\_DEPS\PUGIXML-SUBBUILD\CMAKEFILES\52855B34B860AFB6D67DE8C3C2AE41E4\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild" "-BC:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/pugixml-populate.slnx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

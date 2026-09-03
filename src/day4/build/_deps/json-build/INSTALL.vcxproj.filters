@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\svant\OneDrive\Desktop\dagens labb rep\Natverk-och-systemintegration-labbREP\src\day4\build\CMakeFiles\0243e705568b5cc9eab82d4424f2c5f2\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9FF4CE8D-2FD7-3144-A2F4-CB2C7580C129}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

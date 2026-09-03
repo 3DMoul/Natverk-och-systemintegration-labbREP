@@ -1,0 +1,10 @@
+^C:\USERS\SVANT\ONEDRIVE\DESKTOP\DAGENS LABB REP\NATVERK-OCH-SYSTEMINTEGRATION-LABBREP\SRC\DAY4\BUILD\_DEPS\JSON-SUBBUILD\CMAKEFILES\82A098E38C45D2CACE3F635C9EC5397B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/json-subbuild" "-BC:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/json-subbuild" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/json-subbuild/json-populate.slnx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

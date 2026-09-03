@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.3/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-src/CMakeLists.txt
+C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-src/scripts/pugixml-config.cmake.in
+C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-src/scripts/pugixml.pc.in

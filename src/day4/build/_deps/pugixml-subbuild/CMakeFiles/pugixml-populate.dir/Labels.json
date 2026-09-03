@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/pugixml-populate"
+		},
+		{
+			"file" : "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/52855b34b860afb6d67de8c3c2ae41e4/pugixml-populate.rule"
+		},
+		{
+			"file" : "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/2e247b94d8111bda837201f7205170fb/pugixml-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/c7b5749a54ae449c8da91e41f288bc6a/pugixml-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/c7b5749a54ae449c8da91e41f288bc6a/pugixml-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/c7b5749a54ae449c8da91e41f288bc6a/pugixml-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/c7b5749a54ae449c8da91e41f288bc6a/pugixml-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/c7b5749a54ae449c8da91e41f288bc6a/pugixml-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/c7b5749a54ae449c8da91e41f288bc6a/pugixml-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/c7b5749a54ae449c8da91e41f288bc6a/pugixml-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/c7b5749a54ae449c8da91e41f288bc6a/pugixml-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"pugixml-populate"
+		],
+		"name" : "pugixml-populate"
+	}
+}

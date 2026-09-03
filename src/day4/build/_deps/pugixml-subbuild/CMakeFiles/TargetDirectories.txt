@@ -1,0 +1,3 @@
+C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/pugixml-populate.dir
+C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/ALL_BUILD.dir
+C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/ZERO_CHECK.dir

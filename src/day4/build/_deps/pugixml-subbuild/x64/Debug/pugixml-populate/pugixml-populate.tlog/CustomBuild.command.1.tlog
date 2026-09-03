@@ -1,0 +1,150 @@
+^C:\USERS\SVANT\ONEDRIVE\DESKTOP\DAGENS LABB REP\NATVERK-OCH-SYSTEMINTEGRATION-LABBREP\SRC\DAY4\BUILD\_DEPS\PUGIXML-SUBBUILD\CMAKEFILES\C7B5749A54AE449C8DA91E41F288BC6A\PUGIXML-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/pugixml-populate-prefix/tmp/pugixml-populate-mkdirs.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/pugixml-populate-prefix/src/pugixml-populate-stamp/Debug/pugixml-populate-mkdir"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SVANT\ONEDRIVE\DESKTOP\DAGENS LABB REP\NATVERK-OCH-SYSTEMINTEGRATION-LABBREP\SRC\DAY4\BUILD\_DEPS\PUGIXML-SUBBUILD\CMAKEFILES\C7B5749A54AE449C8DA91E41F288BC6A\PUGIXML-POPULATE-DOWNLOAD.RULE
+setlocal
+cd "C:\Users\svant\OneDrive\Desktop\dagens labb rep\Natverk-och-systemintegration-labbREP\src\day4\build\_deps"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/pugixml-populate-prefix/tmp/pugixml-populate-gitclone.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/pugixml-populate-prefix/src/pugixml-populate-stamp/Debug/pugixml-populate-download"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SVANT\ONEDRIVE\DESKTOP\DAGENS LABB REP\NATVERK-OCH-SYSTEMINTEGRATION-LABBREP\SRC\DAY4\BUILD\_DEPS\PUGIXML-SUBBUILD\CMAKEFILES\C7B5749A54AE449C8DA91E41F288BC6A\PUGIXML-POPULATE-UPDATE.RULE
+setlocal
+cd "C:\Users\svant\OneDrive\Desktop\dagens labb rep\Natverk-och-systemintegration-labbREP\src\day4\build\_deps\pugixml-src"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/pugixml-populate-prefix/tmp/pugixml-populate-gitupdate.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SVANT\ONEDRIVE\DESKTOP\DAGENS LABB REP\NATVERK-OCH-SYSTEMINTEGRATION-LABBREP\SRC\DAY4\BUILD\_DEPS\PUGIXML-SUBBUILD\CMAKEFILES\C7B5749A54AE449C8DA91E41F288BC6A\PUGIXML-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/pugixml-populate-prefix/src/pugixml-populate-stamp/Debug/pugixml-populate-patch"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SVANT\ONEDRIVE\DESKTOP\DAGENS LABB REP\NATVERK-OCH-SYSTEMINTEGRATION-LABBREP\SRC\DAY4\BUILD\_DEPS\PUGIXML-SUBBUILD\CMAKEFILES\C7B5749A54AE449C8DA91E41F288BC6A\PUGIXML-POPULATE-CONFIGURE.RULE
+setlocal
+cd "C:\Users\svant\OneDrive\Desktop\dagens labb rep\Natverk-och-systemintegration-labbREP\src\day4\build\_deps\pugixml-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/pugixml-populate-prefix/src/pugixml-populate-stamp/Debug/pugixml-populate-configure"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SVANT\ONEDRIVE\DESKTOP\DAGENS LABB REP\NATVERK-OCH-SYSTEMINTEGRATION-LABBREP\SRC\DAY4\BUILD\_DEPS\PUGIXML-SUBBUILD\CMAKEFILES\C7B5749A54AE449C8DA91E41F288BC6A\PUGIXML-POPULATE-BUILD.RULE
+setlocal
+cd "C:\Users\svant\OneDrive\Desktop\dagens labb rep\Natverk-och-systemintegration-labbREP\src\day4\build\_deps\pugixml-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/pugixml-populate-prefix/src/pugixml-populate-stamp/Debug/pugixml-populate-build"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SVANT\ONEDRIVE\DESKTOP\DAGENS LABB REP\NATVERK-OCH-SYSTEMINTEGRATION-LABBREP\SRC\DAY4\BUILD\_DEPS\PUGIXML-SUBBUILD\CMAKEFILES\C7B5749A54AE449C8DA91E41F288BC6A\PUGIXML-POPULATE-INSTALL.RULE
+setlocal
+cd "C:\Users\svant\OneDrive\Desktop\dagens labb rep\Natverk-och-systemintegration-labbREP\src\day4\build\_deps\pugixml-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/pugixml-populate-prefix/src/pugixml-populate-stamp/Debug/pugixml-populate-install"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SVANT\ONEDRIVE\DESKTOP\DAGENS LABB REP\NATVERK-OCH-SYSTEMINTEGRATION-LABBREP\SRC\DAY4\BUILD\_DEPS\PUGIXML-SUBBUILD\CMAKEFILES\C7B5749A54AE449C8DA91E41F288BC6A\PUGIXML-POPULATE-TEST.RULE
+setlocal
+cd "C:\Users\svant\OneDrive\Desktop\dagens labb rep\Natverk-och-systemintegration-labbREP\src\day4\build\_deps\pugixml-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/pugixml-populate-prefix/src/pugixml-populate-stamp/Debug/pugixml-populate-test"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SVANT\ONEDRIVE\DESKTOP\DAGENS LABB REP\NATVERK-OCH-SYSTEMINTEGRATION-LABBREP\SRC\DAY4\BUILD\_DEPS\PUGIXML-SUBBUILD\CMAKEFILES\2E247B94D8111BDA837201F7205170FB\PUGIXML-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/Debug/pugixml-populate-complete"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/pugixml-populate-prefix/src/pugixml-populate-stamp/Debug/pugixml-populate-done"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SVANT\ONEDRIVE\DESKTOP\DAGENS LABB REP\NATVERK-OCH-SYSTEMINTEGRATION-LABBREP\SRC\DAY4\BUILD\_DEPS\PUGIXML-SUBBUILD\CMAKEFILES\52855B34B860AFB6D67DE8C3C2AE41E4\PUGIXML-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SVANT\ONEDRIVE\DESKTOP\DAGENS LABB REP\NATVERK-OCH-SYSTEMINTEGRATION-LABBREP\SRC\DAY4\BUILD\_DEPS\PUGIXML-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild" "-BC:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild" --check-stamp-file "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/_deps/pugixml-subbuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

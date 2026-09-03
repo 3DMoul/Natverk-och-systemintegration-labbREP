@@ -1,0 +1,10 @@
+^C:\USERS\SVANT\ONEDRIVE\DESKTOP\DAGENS LABB REP\NATVERK-OCH-SYSTEMINTEGRATION-LABBREP\SRC\DAY4\BUILD\CMAKEFILES\29C37098E21AF320669AB7685D968861\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4" "-BC:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day4/build/iot25_day4_data_formats.slnx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
