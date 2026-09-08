@@ -1,0 +1,4 @@
+build/
+received.json
+reading.json
+*.log

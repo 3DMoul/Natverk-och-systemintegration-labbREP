@@ -1,0 +1,6 @@
+{
+  "sensorId": "temp-01",
+  "value": 21.7,
+  "unit": "C",
+  "room": "Sal 4"
+}
