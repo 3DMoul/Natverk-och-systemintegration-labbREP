@@ -1,0 +1,13 @@
+# Loaded only inside the iot25-d6-router network namespace
+flush ruleset
+table inet iot25 {
+    chain forward {
+        type filter hook forward priority 0;
+        policy drop;
+        ct state invalid counter drop
+        ct state established,related counter accept
+        ip saddr 10.60.10.10 ip daddr 10.60.20.10 tcp dport 1883 counter accept
+        ip saddr 10.60.30.10 ip daddr 10.60.20.10 tcp dport 8080 counter accept
+        counter drop
+    }
+}
