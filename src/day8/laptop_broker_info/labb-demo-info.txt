@@ -1,0 +1,6 @@
+Lägg laptop-ca.crt i demo_esp32_mqtts/main/certs/laptop-ca.crt
+
+Broker URI: `mqtts://172.16.216.64:8883`
+* MQTT username: `day8`
+* MQTT password: `demo-password`
+* Topic prefix: Ett unikt prefix, exempelvis `iot25/day8/grupp-04`

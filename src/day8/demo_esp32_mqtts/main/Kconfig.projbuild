@@ -1,0 +1,27 @@
+menu "Day 8 Demo Configuration"
+
+config DEMO_WIFI_SSID
+    string "Wi-Fi SSID"
+    default "STI Student"
+
+config DEMO_WIFI_PASSWORD
+    string "Wi-Fi password"
+    default "STI1924stu"
+
+config DEMO_MQTT_BROKER_URI
+    string "MQTTS broker URI"
+    default "mqtts://192.168.1.10:8883"
+
+config DEMO_MQTT_USERNAME
+    string "MQTT username"
+    default "day8"
+
+config DEMO_MQTT_PASSWORD
+    string "MQTT password"
+    default "change-me"
+
+config DEMO_TOPIC_PREFIX
+    string "MQTT topic prefix"
+    default "iot25/day8"
+
+endmenu
