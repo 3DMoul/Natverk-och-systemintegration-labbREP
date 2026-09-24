@@ -1,33 +1,52 @@
 # git-recap
 detta reposetory är för alla labbar
-day2
-
-tcp och udp tester
-
-TCP:
---
-![alt text](image-4.png) wireshark
-![alt text](image-1.png) terminal
-^^testade med att använda fel port på klienten då misslyckades kommandot^^
---
-![alt text](image-3.png)
-^^testade med att inte ha servern på när man kör klient kommandot då misslyckades det också^^
-----
-wireshark
-![alt text](image.png)
-Man kan se JSON meddelandet som skickades från klienten i den fjärde columnen och man kan se JSON statusmeddelandet från servern i en sjätte columnen
+day9
 
 
-UDP:
---
-![alt text](image-5.png) wireshark
-![alt text](image-6.png) terminal
-^^testade att skicka iväg JSON meddelandet innan mottagaren var på och den verka skicka meddelandet men den säger att destinationen är unreachable^^
---
-![alt text](image-8.png) wireshark
-![alt text](image-7.png) terminal
-^^testade att skicka iväg JSON meddelandet till en mottagare som letar efter en annan port det verkade skicka men den sa det i wireshark att destinationen är unreachable^^
-----
-wireshark
-![alt text](image-2.png)
-udp skickar JSON meddelandet i en package
+server.cpp
+---
+HTTP-status: 400 Bad Request
+Loggnivå: WARNING
+eventnamn: reading_rejected
+Felorsak: value must be a finite number
+Svarstid: 0.246 ms
+
+server.py
+---
+HTTP-status: 400 Bad Request
+Loggnivå: WARNING
+eventnamn: reading_rejected
+Felorsak: value must be a finite number
+Svarstid: 0.108 ms
+
+
+2.Kontrollera mätetal
+---
+Öppna http://127.0.0.1:8090/dashboard. Jämför dashboarden med JSON-svaret och textformatet.
+Förklara varför tre vyer inte betyder tre oberoende mätningar.
+
+:det tre vyer betyder inte tre oberoende mätningar. det är tre olika sätt att presentera samma mätdata från servern.
+
+
+man kan se det som:
+Dashboard → lätt för en människa att snabbt se status och upptäcka avvikelser.
+JSON → bra för andra program/API-klienter som behöver läsa och bearbeta datan.
+Textformat → bra för övervakningsverktyg som exempelvis Prometheus.
+
+4.Filtrera nätverkstrafik
+---
+Om trafiken i stället gick över HTTPS/TLS skulle Wireshark fortfarande kunna se:
+
+IP-adresser
+TCP-portar
+Att en TLS-anslutning används
+Mängden data som skickas
+
+Men innehållet skulle vara krypterat. Du skulle inte kunna läsa:
+
+HTTP-metoden (GET, POST)
+URL:er som /api/readings eller /api/metrics
+HTTP-statuskoder (202, 400, 404)
+HTTP-headerar
+JSON-data och mätvärden
+Request-ID:n och annan applikationsdata

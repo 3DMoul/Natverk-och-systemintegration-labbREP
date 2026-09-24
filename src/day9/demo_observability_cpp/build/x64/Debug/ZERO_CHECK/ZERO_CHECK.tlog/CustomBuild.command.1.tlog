@@ -1,0 +1,10 @@
+^C:\USERS\SVANT\ONEDRIVE\DESKTOP\DAGENS LABB REP\NATVERK-OCH-SYSTEMINTEGRATION-LABBREP\SRC\DAY9\DEMO_OBSERVABILITY_CPP\BUILD\CMAKEFILES\61088CE8CFEAEF03EEA3EAF0C9158113\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day9/demo_observability_cpp" "-BC:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day9/demo_observability_cpp/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/svant/OneDrive/Desktop/dagens labb rep/Natverk-och-systemintegration-labbREP/src/day9/demo_observability_cpp/build/iot25_observability_cpp.slnx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
