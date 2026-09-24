@@ -1,52 +1,79 @@
 # git-recap
 detta reposetory är för alla labbar
-day9
+day10
 
 
-server.cpp
+Arbetsform och roller
+
 ---
-HTTP-status: 400 Bad Request
-Loggnivå: WARNING
-eventnamn: reading_rejected
-Felorsak: value must be a finite number
-Svarstid: 0.246 ms
 
-server.py
+Del A – Startkontroll
+
+1. Välj Python-demot eller C++-demot och starta servern enligt dess README
+2. Verifiera hälsa med curl http://127.0.0.1:8091/health
+3. Kör tre begäranden och kontrollera att både klient och server visar samma request_id
+4. Skriv version, port och startkommando i protokollet
+
 ---
-HTTP-status: 400 Bad Request
-Loggnivå: WARNING
-eventnamn: reading_rejected
-Felorsak: value must be a finite number
-Svarstid: 0.108 ms
 
+Del B – Baslinje
 
-2.Kontrollera mätetal
+1. Kör python client.py --count 20 --interval-ms 50
+2. Spara antal försök, lyckade, fel, min, median, medel, p95 och max
+3. Hämta curl http://127.0.0.1:8091/metrics
+4. Beskriv exakt vad klientens svarstid mäter
+5. Upprepa körningen och notera normal variation
+
 ---
-Öppna http://127.0.0.1:8090/dashboard. Jämför dashboarden med JSON-svaret och textformatet.
-Förklara varför tre vyer inte betyder tre oberoende mätningar.
 
-:det tre vyer betyder inte tre oberoende mätningar. det är tre olika sätt att presentera samma mätdata från servern.
+Del C – Kontrollerad fördröjning
 
+1. Stoppa servern
+2. Starta python server.py --delay-ms 250
+3. Skriv en hypotes innan klienten körs
+4. Kör samma klientkommando som i baslinjen
+5. Jämför klientens totaltid med serverns processing_ms
+6. Ange vilket bevis som stödjer eller motsäger hypotesen
 
-man kan se det som:
-Dashboard → lätt för en människa att snabbt se status och upptäcka avvikelser.
-JSON → bra för andra program/API-klienter som behöver läsa och bearbeta datan.
-Textformat → bra för övervakningsverktyg som exempelvis Prometheus.
-
-4.Filtrera nätverkstrafik
 ---
-Om trafiken i stället gick över HTTPS/TLS skulle Wireshark fortfarande kunna se:
 
-IP-adresser
-TCP-portar
-Att en TLS-anslutning används
-Mängden data som skickas
+Del D – Skilj tre feltyper åt
 
-Men innehållet skulle vara krypterat. Du skulle inte kunna läsa:
+Genomför testerna ett i taget och återställ mellan dem. Test Så framkallas felet Fråga
 
-HTTP-metoden (GET, POST)
-URL:er som /api/readings eller /api/metrics
-HTTP-statuskoder (202, 400, 404)
-HTTP-headerar
-JSON-data och mätvärden
-Request-ID:n och annan applikationsdata
+- Anslutningsfel | Kör klienten mot port 8092 | Finns HTTP-status eller serverlogg?
+- Serverfel | Starta servern med --failure-every 3 | Vilka anrop får status 500?
+- Valideringsfel | Kör klienten med --invalid-every 3 | Varför är status 400 inte paketförlust?
+
+För varje test ska ni spara:
+- Symptom från klienten
+- Relevant serverlogg eller frånvaro av serverlogg
+- Ett ytterligare bevis, exempelvis mätetal, ss eller nätverksspår
+- Klassificering av felgränsen
+
+---
+
+Del E – Åtgärd och återställning
+
+Välj en liten åtgärd som matchar ett observerat problem. Exempel:
+- Rätta porten i klientkonfigurationen
+- Minska onödig behandlingstid
+- Förbättra valideringsfelets meddelande
+- Begränsa samtidighet eller ködjup
+- Kör samma test före och efter. Dokumentera en möjlig bieffekt. Starta därefter servern utan felparametrar och verifiera baslinjen igen.
+
+---
+
+Valfri del F – Passiv nätverksobservation
+
+Kör på loopbackgränssnittet:
+sudo tcpdump -i lo -nn 'tcp port 8091'
+
+På Windows kan Wireshark med Npcap loopback-adapter användas. Denna del är valfri eftersom klientresultat och serverlogg räcker för grundmålen.
+
+Leverans
+- Ifyllt mät- och hypotesprotokoll
+- Minst två baslinjekörningar
+- Tre klassificerade feltyper
+- En före- och efterjämförelse eller en tydligt motiverad rekommendation
+- Återställningsbevis
